@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    h1,h2,h3,h4,h5,h6{
+        color: red;
+    }
+    p a[href]{
+        color: black;
+    }
+    ul li.ultimo {
+        color: yellow;
+      
+    }
+    ul li a.ultimo{
+        color: blue;
+    }
+    .importante{
+        color: green;
+    }
+    h1.importante,h2.importante,h3.importante,h4.importante,h5.importante,h6.importante {
+        color:red;
+    }
+    h1[title]{
+        color: blue;
+    }
+    ol li a:link{
+        color:blue;
+        text-decoration: none;
+    }
+    ol li a:visited{
+        color:violet;
+        text-decoration:none;
+    }    
+    </style>
+
+</head>
+<body>
+    <h1>titulo rojo</h1>
+        <p>
+            <a href="https://www.google.com">Link negro</a>
+        </p>
+    <ul >
+            <li class="ultimo">Hola</li>
+            <li><a class="ultimo" href="https://www.google.com">link</a></li>
+    </ul>
+    <p class="importante">Soy un texto verde de la clase importante</p>
+    <h1 class="importante">Soy un titulo rojo, pero de la clase "importante"</h1>
+
+    <h1 title="titulo"> Soy un titulo azul</h1>
+    <ol class="ultimo">
+        <li ><a href="https://www.google2.com">link</a></li>
+        <li><a href="https://www.google.com">link</a></li>
+    </ol>
+</body>
+</html>
