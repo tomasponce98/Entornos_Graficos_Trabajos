@@ -55,7 +55,7 @@ else{
     <div class="form-row">
         <div class="form-group col-3">
             <label for="superficie">Superficie Total</label>
-            <input name="superficie" type="number" class="form-control" id="superficie" placeholder="Superficie total"
+            <input name="superficie" type="number" step="any" class="form-control" id="superficie" placeholder="Superficie total"
                 value="<?php echo($fila['superficie']); ?>" required>
         </div>
     </div>
