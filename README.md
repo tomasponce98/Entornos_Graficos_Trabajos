@@ -6,3 +6,4 @@ Practica 3     realizada.<br />
 Practica 4  PHP realizada.<br />
 Practica 5  PHP realizada.<br />
 Practica 6  PHP realizada.<br />
+Practica 7  PHP realizada.<br />
