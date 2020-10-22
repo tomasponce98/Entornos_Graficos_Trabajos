@@ -14,15 +14,24 @@ $vSql = "select * from buscador where canciones LIKE '%".$pal."%'";
 $resp = mysqli_query($link, $vSql) or die (mysql_error());
 if(mysqli_num_rows($resp) == "0") {
 echo "No hay resultados respecto a la palabra que busca.";
+?><p><a href="Ejercicio8.html">Volver al Buscador de Canciones</a></p><?php
 } else {
 echo "<center><strong>RESULTADOS DE BUSQUEDA</strong></center><br>";?>
-<p><a href="Ejercicio8.html">Volver al Buscador de Canciones</a></p><?php
+<p><a href="Ejercicio8.html">Volver al Buscador de Canciones</a></p>
+<table>
+<?php
+
 while($cat = mysqli_fetch_array($resp)) {?>
+<tr>
 <td><?php echo ($cat['canciones']); ?></td>
 </tr>
 <tr>
 <td colspan="5">
-<?php }
+
+<td colspan="5">
+<?php }?>
+</table>
+<?php
 }
 }else{
 echo "<form name='FormBuscador' method='post' action='buscador.php'><input name='palabra' type='text' id='palabra'><input type='submit' name='Submit' value='Buscar!'></form>";
